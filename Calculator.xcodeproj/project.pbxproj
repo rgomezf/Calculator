@@ -77,12 +77,9 @@
 		3E74CEE11E1EFDDE002D68ED /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				3E74CEE21E1EFDDE002D68ED /* AppDelegate.swift */,
 				3E74CEE41E1EFDDE002D68ED /* ViewController.swift */,
 				3E74CEE61E1EFDDE002D68ED /* Main.storyboard */,
-				3E74CEE91E1EFDDE002D68ED /* Assets.xcassets */,
-				3E74CEEB1E1EFDDE002D68ED /* LaunchScreen.storyboard */,
-				3E74CEEE1E1EFDDE002D68ED /* Info.plist */,
+				3E74CF021E1EFE2D002D68ED /* Supporting Files */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -94,6 +91,17 @@
 				3E74CEF91E1EFDDE002D68ED /* Info.plist */,
 			);
 			path = CalculatorTests;
+			sourceTree = "<group>";
+		};
+		3E74CF021E1EFE2D002D68ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E74CEE21E1EFDDE002D68ED /* AppDelegate.swift */,
+				3E74CEE91E1EFDDE002D68ED /* Assets.xcassets */,
+				3E74CEEB1E1EFDDE002D68ED /* LaunchScreen.storyboard */,
+				3E74CEEE1E1EFDDE002D68ED /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Calculator;
@@ -340,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Calculator;
