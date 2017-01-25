@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: Properties
-    @IBOutlet private weak var display: UILabel!
-    private var userIsTyping = false
+    @IBOutlet fileprivate weak var display: UILabel!
+    fileprivate var userIsTyping = false
 
-    private var displayValue: Double {
+    fileprivate var displayValue: Double {
         get {
             return Double(display.text!)!
         }
@@ -22,10 +22,10 @@ class ViewController: UIViewController {
             display.text = String(newValue)
         }
     }
-    private var brain = CalculatorBrain()
+    fileprivate var brain = CalculatorBrain()
     
     //MARK: Actions
-    @IBAction private func digitTouched(sender: UIButton) {
+    @IBAction fileprivate func digitTouched(_ sender: UIButton) {
         let digit = sender.currentTitle!
         
         if userIsTyping == true {
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction private func performOperation(sender: UIButton) {
+    @IBAction fileprivate func performOperation(_ sender: UIButton) {
         if userIsTyping {
             brain.setOperand(displayValue)
             userIsTyping = false
