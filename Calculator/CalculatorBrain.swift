@@ -42,7 +42,7 @@ class CalculatorBrain
         "-" : Operation.binaryOperation({$0 - $1}),
         "=" : Operation.equals
     ]
-
+    
     var result: Double {
         get {
             return accumulator
