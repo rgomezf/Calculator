@@ -103,4 +103,8 @@ class CalculatorBrain
             pending = nil
         }
     }
+    
+    func addUnaryOperation(symbol: String, operation: @escaping (Double) -> Double) {
+        operations[symbol] = Operation.unaryOperation(operation)
+    }
 }
