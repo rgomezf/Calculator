@@ -8,11 +8,25 @@
 
 import UIKit
 
+var calculatorCount = 0
+
 class ViewController: UIViewController {
     
     //MARK: Properties
     @IBOutlet fileprivate weak var display: UILabel!
+    
     fileprivate var userIsTyping = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        calculatorCount += 1
+        print("Loaded up a new Calculator (count = \(calculatorCount))")
+    }
+    
+    deinit {
+        calculatorCount -= 1
+        print("Calculator left the heap (count = \(calculatorCount))")
+    }
 
     fileprivate var displayValue: Double {
         get {

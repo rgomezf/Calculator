@@ -102,9 +102,9 @@
 		3E74CEE11E1EFDDE002D68ED /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				3E9F025A1E25393700F8F83A /* CalculatorBrain.swift */,
 				3E74CEE41E1EFDDE002D68ED /* ViewController.swift */,
 				3E74CEE61E1EFDDE002D68ED /* Main.storyboard */,
+				3E9F025A1E25393700F8F83A /* CalculatorBrain.swift */,
 				3E74CF021E1EFE2D002D68ED /* Supporting Files */,
 			);
 			path = Calculator;
